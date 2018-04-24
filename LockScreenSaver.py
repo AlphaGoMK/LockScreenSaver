@@ -7,8 +7,10 @@ parser.add_argument('--threshold','-t',default=0.1,type=float,metavar='W',
 					help='File size threshold, greater than x MB')
 
 args=parser.parse_args()
-path="C:\\Users\\"+args.user_name+"\\AppData\\Local\\Packages\\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets"
-respath="C:\\Users\\"+args.user_name+"\\AppData\\Local\\Packages\\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets\\Images"
+path="C:\\Users\\"+args.user_name+
+     "\\AppData\\Local\\Packages\\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets"
+respath="C:\\Users\\"+args.user_name+
+        "\\AppData\\Local\\Packages\\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets\\Images"
 threshold=args.threshold # 0.1MB
 
 if os.path.exists(respath):
